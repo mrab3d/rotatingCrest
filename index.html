@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Crest</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            font-family: 'Fira Code';
+            color: #333;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        h1 {
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            z-index: -1;
+        }
+        #crest {
+            height: 200px;
+            width: 200px;
+            border-left: 3px solid deeppink;
+            border-bottom: 1px solid orangered;
+            border-radius: 100%;
+            animation: crestEngine 0.4s infinite;
+        }
+        #crest:hover {
+            animation: crestEngine 0.3s infinite;
+        }
+        @keyframes crestEngine {
+            0% {
+                transform: rotate(0deg)
+            }
+            25% {
+                transform: rotate(90deg)
+            }
+            50% {
+                transform: rotate(180deg)
+            }
+            75% {
+                transform: rotate(270deg)
+            }
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="crest">
+        
+    </div>
+    <h1>abed.dev</h1>
+</body>
+</html>
