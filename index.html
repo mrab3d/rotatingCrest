@@ -28,10 +28,11 @@
         #crest {
             height: 200px;
             width: 200px;
-            border-left: 3px solid deeppink;
-            border-bottom: 1px solid orangered;
+            border-image: linear-gradient(45deg, #f05050, #f00962) 1;
+            border-left: 3px solid;
+            border-bottom: 1px solid;
             border-radius: 100%;
-            animation: crestEngine 0.4s infinite;
+            /* animation: crestEngine 0.4s infinite; */
         }
         #crest:hover {
             animation: crestEngine 0.3s infinite;
@@ -53,6 +54,18 @@
                 transform: rotate(360deg)
             }
         }
+        #grad {
+            background-image: linear-gradient(#f05050, #f00962);
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            transition: all 0.4s;
+            animation: crestEngine infinite 0.4s;
+            border: #333 solid 25px;
+        }
+        #grad:hover {
+            transform: rotate(360deg);
+        }
     </style>
 </head>
 <body>
@@ -60,5 +73,6 @@
         
     </div>
     <h1>abed.dev</h1>
+    <!-- <div id="grad"></div> -->
 </body>
 </html>
